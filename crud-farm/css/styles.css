@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: #f3f5f9;
+    min-width: 960px;
+}
+
+.wrapper{
+    width: 20%;
+        min-width: 200px;
+        max-width: 250px;
+    display: flex;
+    position: relative;
+}
+
+    /* THE NOT WRAPPER */
+    .container{
+        /* border: 1px red solid; */
+        max-width: 75%;
+        margin-left: 20%;
+    }
+
+.wrapper .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(47, 135, 236);
+    padding: 30px 0;
+    overflow-x: scroll;
+    overflow-y: none;
+}
+
+.wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper .sidebar li{
+    padding: 1rem;
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.05);
+    border-top: 2.5px solid rgba(225, 225, 225, 0.05);
+    
+}
+
+.wrapper .sidebar li a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrapper .sidebar li:hover{
+    background: #055699;
+}
+
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+}
+
+.card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+    color: var(--bs-card-cap-color);
+    background-color: var(--bs-card-cap-bg);
+    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--bs-table-color);
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
+
+/* CSS for login */
+.login{
+    width: 30%;
+    border: 1px solid grey;
+    margin: 5% auto;
+    padding: 2%;
+
+}
+.text-center{
+    text-align: center;
+}
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #3742fa;
+}
+.sucess{
+    color: green;
+}
+.error{
+    color: red;
+}
+
+/* @media (max-width:1080px){
+    .wrapper{
+        
+    }
+    .row{
+        margin: 5% auto;
+    }
+    .card-body {
+        display: block;
+        width: 100%;
+
+    }
+    
+} */
